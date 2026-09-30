@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우리 팀 소개</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Pretendard", "Malgun Gothic", system-ui, sans-serif;
+      background: #f6f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: #fff;
+      text-align: center;
+      padding: 64px 16px;
+    }
+    header h1 { margin: 0 0 8px; font-size: 2.4rem; }
+    header p { margin: 0; opacity: 0.9; }
+    main { max-width: 960px; margin: 0 auto; padding: 40px 16px; }
+    h2 { border-left: 4px solid #4f46e5; padding-left: 12px; }
+    .members {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+    .avatar {
+      width: 72px; height: 72px;
+      margin: 0 auto 12px;
+      border-radius: 50%;
+      background: #e0e7ff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem;
+    }
+    .card h3 { margin: 0; }
+    .role { color: #4f46e5; font-weight: 600; margin: 4px 0 8px; }
+    footer { text-align: center; color: #888; padding: 24px; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>바이브 팀 🚀</h1>
+    <p>함께 배우고, 함께 만드는 팀입니다.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>우리는 누구인가요?</h2>
+      <p>
+        바이브 팀은 새로운 기술을 직접 써보고 작은 프로젝트를 빠르게 만들어 보는 것을 좋아하는 사람들이 모인 팀입니다.
+        서로의 아이디어를 존중하고, 실패를 두려워하지 않으며, 매일 조금씩 성장하는 것을 목표로 합니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>팀원 소개</h2>
+      <div class="members">
+        <div class="card">
+          <div class="avatar">🧑‍💻</div>
+          <h3>팀원 1</h3>
+          <p class="role">팀장 · 기획</p>
+          <p>팀의 방향을 잡고 일정을 관리합니다.</p>
+        </div>
+        <div class="card">
+          <div class="avatar">🎨</div>
+          <h3>팀원 2</h3>
+          <p class="role">디자인</p>
+          <p>사용자가 보기 좋은 화면을 만듭니다.</p>
+        </div>
+        <div class="card">
+          <div class="avatar">⚙️</div>
+          <h3>팀원 3</h3>
+          <p class="role">개발</p>
+          <p>아이디어를 실제로 동작하는 코드로 만듭니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>우리의 목표</h2>
+      <ul>
+        <li>매주 하나씩 작은 결과물 만들기</li>
+        <li>배운 내용을 서로 공유하기</li>
+        <li>즐겁게 협업하기</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>© 2026 바이브 팀</footer>
+</body>
+</html>
